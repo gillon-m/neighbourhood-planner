@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planlocation.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset + base */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+          font-family: 'Inter', sans-serif;
+          background: linear-gradient(135deg, #eef2ff, #ffffff);
+          color: #1f2937;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          padding: 2rem;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          color: #1e3a8a;
+        }
+
+        p {
+          font-size: 1.2rem;
+          max-width: 650px;
+          margin-bottom: 2rem;
+          line-height: 1.5;
+        }
+
+        .cta-button {
+          text-decoration: none;
+          color: white;
+          background: linear-gradient(90deg, #3b82f6, #6366f1);
+          padding: 0.8rem 1.8rem;
+          border-radius: 0.5rem;
+          font-weight: 600;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          transition: all 0.2s;
+        }
+
+        .cta-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        footer {
+          margin-top: 3rem;
+          font-size: 0.9rem;
+          color: #6b7280;
+        }
+
+        .mock-search {
+          margin: 2rem 0;
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        .mock-search input {
+          padding: 0.6rem 1rem;
+          border-radius: 0.5rem 0 0 0.5rem;
+          border: 1px solid #d1d5db;
+          width: 250px;
+        }
+
+        .mock-search button {
+          padding: 0.6rem 1rem;
+          border: none;
+          border-radius: 0 0.5rem 0.5rem 0;
+          background-color: #3b82f6;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.2s;
+        }
+
+        .mock-search button:hover {
+          background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+<h1>planlocation.com</h1>
+<p>
+    AI-powered exploration of upcoming developments and plans for Australian neighbourhoods.
+    Ask natural language questions and get insights on local planning and proposals.
+</p>
+
+<div class=“search-bar”>
+    <label>
+        <input type="text" placeholder="Search for a suburb, type, or project..."/>
+    </label>
+    <button>Search</button>
+</div>
+
+<a class="cta-button" href="#">Prototype Coming Soon</a>
+
+<footer>
+    Prototype in development
+</footer>
+
+</body>
+</html>
