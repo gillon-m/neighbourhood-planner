@@ -8,11 +8,11 @@
     <style>
         /* Reset + base */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body, html {
+        html, body {
           height: 100%;
           font-family: 'Inter', sans-serif;
         }
-
+    
         /* Background image */
         body {
           background: url('sydney.jpg') no-repeat center center fixed;
@@ -23,8 +23,9 @@
           text-align: center;
           color: white;
           position: relative;
+          padding: 1rem;
         }
-
+    
         /* Overlay for better readability */
         body::before {
           content: "";
@@ -34,30 +35,31 @@
           background: rgba(0,0,0,0.5);
           z-index: 1;
         }
-
+    
         .content {
           position: relative;
           z-index: 2;
           max-width: 700px;
+          width: 100%;
           padding: 2rem;
         }
-
+    
         h1 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: 700;
           margin-bottom: 1rem;
-          color: #ffffff;
           text-shadow: 0 2px 6px rgba(0,0,0,0.5);
         }
-
+    
         p {
-          font-size: 1.2rem;
-          margin-bottom: 2rem;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
           line-height: 1.5;
           text-shadow: 0 1px 4px rgba(0,0,0,0.6);
         }
-
+    
         .cta-button {
+          display: inline-block;
           text-decoration: none;
           color: white;
           background: linear-gradient(90deg, #3b82f6, #6366f1);
@@ -66,28 +68,31 @@
           font-weight: 600;
           box-shadow: 0 4px 12px rgba(0,0,0,0.3);
           transition: all 0.2s;
+          margin-top: 1rem;
         }
-
+    
         .cta-button:hover {
           transform: translateY(-2px);
           box-shadow: 0 6px 16px rgba(0,0,0,0.4);
         }
-
+    
         .search-bar {
-          margin: 2rem 0;
+          margin: 1.5rem 0;
           display: flex;
           justify-content: center;
           gap: 0.5rem;
+          flex-wrap: wrap;
         }
-
+    
         .search-bar input {
           padding: 0.6rem 1rem;
           border-radius: 0.5rem 0 0 0.5rem;
           border: none;
-          width: 250px;
+          flex: 1 1 200px;
+          min-width: 150px;
           outline: none;
         }
-
+    
         .search-bar button {
           padding: 0.6rem 1rem;
           border: none;
@@ -98,31 +103,70 @@
           cursor: pointer;
           transition: background-color 0.2s;
         }
-
+    
         .search-bar button:hover {
           background-color: #2563eb;
         }
-
-        footer {
-          margin-top: 3rem;
+    
+        .linkedin-link {
+          margin-top: 1rem;
           font-size: 0.9rem;
           color: #d1d5db;
         }
-
-        .linkedin-link {
-          margin-top: 1.5rem;
-          font-size: 0.95rem;
-          color: #d1d5db;
-        }
-
+    
         .linkedin-link a {
           color: #3b82f6;
           text-decoration: underline;
         }
+    
+        footer {
+          margin-top: 2rem;
+          font-size: 0.85rem;
+          color: #d1d5db;
+        }
+    
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 2rem;
+          }
+    
+          p {
+            font-size: 0.95rem;
+          }
+    
+          .cta-button {
+            padding: 0.7rem 1.5rem;
+            font-size: 0.95rem;
+          }
+        }
+    
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 1.7rem;
+          }
+    
+          p {
+            font-size: 0.9rem;
+          }
+    
+          .search-bar {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+    
+          .search-bar input, .search-bar button {
+            width: 100%;
+            border-radius: 0.5rem;
+          }
+    
+          .cta-button {
+            width: 100%;
+          }
+        }
     </style>
 </head>
 <body>
-
 <div class="content">
     <h1>planlocation.com</h1>
     <p>
@@ -137,14 +181,13 @@
 
     <a class="cta-button" href="#">Prototype Coming Soon</a>
 
+    <p class="linkedin-link">
+        Reach out on <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a> if you'd like to chat more about AI or my projects!
+    </p>
+
     <footer>
-        <p class="linkedin-link">
-            Reach out on <a href="https://www.linkedin.com/in/gillon-manalastas/" target="_blank">LinkedIn</a> if you'd
-            like to
-            chat more about AI or my projects!
-        </p>
+        Prototype in development
     </footer>
 </div>
-
 </body>
 </html>
